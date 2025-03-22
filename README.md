@@ -6,13 +6,19 @@ Q klavye'ye alışkın insanlar için temel Arapça (esresiz ötresiz) yazmaya y
 
 # Kullanım
 Sade:
+
 عو غ ظ ض ا خ ي ت ر ث ص ز
+
  إ ش ل ق ك ه لا ف د س ع 
+
   ط ة م ن ب و ج ح ذ
 
 Shift:
+
 غ ب ء آ ع ى ط ر أ ض ك
+
  إ ش ل ك ج ح ق ف ض ص ء
+
   ج ة م ن ب ؤ ج خ ز
 
 SağAlt(Ctrl+Alt):
