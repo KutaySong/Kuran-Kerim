@@ -42,7 +42,7 @@ EnableArabic := 0
 EnableArabic := !EnableArabic 
 Return
 
-#If winActive("Studio") && EnableArabic
+#If EnableArabic
 ^!e::آ
 ^!a::ى
 ^!h::ة
