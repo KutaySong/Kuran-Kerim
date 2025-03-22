@@ -4,20 +4,21 @@ Allah azze ve celle'nin içinde şüphe olmayan son kitabı ile ilgi çalışmal
 # Arapça Klavye 
 Q klavye'ye alışkın insanlar için temel Arapça (esresiz ötresiz) yazmaya yarayan yazılımcık.(script)
 
+![Alt Text](KlavyeLayout.jpg?raw=true "ScreenShot")
+
 # Kullanım
 Sade:
-*q  عو غ ظ ض ا خ ي ت ر ث ص ز 
-*a   إ ش ل ق ك ه لا ف د س ع     
-*z    ط ة م ن ب و ج ح ذ         
+q  عو غ ظ ض ا خ ي ت ر ث ص ز
+a   إ ش ل ق ك ه لا ف د س ع 
+z    ط ة م ن ب و ج ح ذ
 
 Shift:
-*q  غ ب ء آ ع ى ط ر أ ض ك     
-*a   إ ش ل ك ج ح ق ف ض ص ء  
-*z    ج ة م ن ب ؤ ج خ ز        
+q  غ ب ء آ ع ى ط ر أ ض ك
+a   إ ش ل ك ج ح ق ف ض ص ء
+z    ج ة م ن ب ؤ ج خ ز
 
 SağAlt(Ctrl+Alt):
 e:آ s:ث y:ئ a:ى t:ث h:ة z:ظ  
-
 
 
 # Kurulum
