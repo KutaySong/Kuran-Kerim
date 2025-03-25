@@ -4,18 +4,18 @@ Allah azze ve celle'nin içinde şüphe olmayan son kitabı ile ilgi çalışmal
 # Arapça Klavye 
 Q klavye'ye alışkın insanlar için temel Arapça (esresiz ötresiz) yazmaya yarayan yazılımcık.(script)
 
-![Alt Text](KlavyeLayout.jpg?raw=true "ScreenShot")
+![Alt Text](KlavyeYerlesimi.jpg?raw=true "ScreenShot")
 
 # Kullanım
 Sade:
-q  عو غ ظ ض ا خ ي ت ر ث ص ز
-a   إ ش ل ق ك ه لا ف د س ع 
-z    ط ة م ن ب و ج ح ذ
+; عو غ ظ ض ا خ ي ت ر أ ص ذ
+;  إ ش ل ق ك ه ح ف د س ع
+;   ط ث م ن ب و ج لا ز
 
 Shift:
-q  غ ب ء آ ع ى ط ر أ ض ك
-a   إ ش ل ك ج ح ق ف ض ص ء
-z    ج ة م ن ب ؤ ج خ ز
+; غ ب ء آ ع ى ط ر آ ض ك
+;  ئ ش ل ك ج ة خ ف ض ص ء
+;   ج ث م ن ب ؤ ج ق ظ
 
 SağAlt(Ctrl+Alt):
 e:آ s:ث y:ئ a:ى t:ث h:ة z:ظ  
@@ -37,12 +37,18 @@ SendMode Input
 SetTitleMatchMode, 2
 DetectHiddenWindows On
 
+
+;.............................................................
+;   Arapça  
+;.............................................................
 EnableArabic := 0
 ^6:: 
 EnableArabic := !EnableArabic 
 Return
 
-#If EnableArabic
+#If winActive("Studio") && EnableArabic
+;*Alt:: SendInput {Alt}{Blind}
+
 ^!e::آ
 ^!a::ى
 ^!h::ة
@@ -51,61 +57,58 @@ Return
 ^!y::ئ
 ^!z::ظ
 
-a::ع
+a::Send,ع
 A::ء
-b::ب
-c::ج
-ç::ط
-Ç::ج
-d::د
+b::Send,ب
+c::Send,ج
+ç::Send,ط
+Ç::Send,ج
+d::Send,د
 D::ض
-e::ث
-E::أ
-f::ف
-g::Send, لا
-G::ق
-ğ::غ
-h::ه
-H::ح
-ı::ا
-I::آ
-SC028::إ
-j::ك
+e::Send,أ
+E::آ
+f::Send,ف
+g::Send,ح
+G::خ
+ğ::Send,غ
+h::Send,ه
+H::ة
+ı::Send,ا
+I::Send,آ
+SC028::Send,إ
++SC028::Send,ئ
+j::Send,ك
 J::ج
-k::ق
+k::Send,ق
 K::ك
-l::ل
-m::م
-n::ن
-o::ض
+l::Send,ل
+m::Send,م
+n::Send,ن
+o::Send,ض
 O::ء
-ö::ة
-p::ظ
+ö::Send,ث
+p::Send,ظ
 P::ب
-q::ز
+q::Send,ذ
 Q::ك
-r::ر
-s::س
+r::Send,ر
+s::Send,س
 S::ص
-ş::ش
-t::ت 
+ş::Send,ش
+t::Send,ت 
 T::ط
-u::خ     
-U::ع      
+u::Send,خ     
+U::ع  
 ü::Send, عو
-v::و
+v::Send,و
 V::ؤ
-w::ص
+w::Send,ص
 W::ض
-x::ح
-X::خ
-y::ي
+x::Send, لا
+X::ق
+y::Send,ي
 Y::ى
-z::ذ
-Z::ز
+z::Send,ز
+Z::ظ
 
-^l::^l
-^z::^z
-!ı::!ı
-!k::!k
 #If
